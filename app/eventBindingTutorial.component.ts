@@ -10,15 +10,24 @@ import {Component} from 'angular2/core';
     template: `
     <h3>Event Binding</h3>
     <h4>There are 2 ways to do event binding.</h4>
-    <p> Syntax 1 : Use the braket (click)="method in the component"</p>
-    <p> Syntax 2 : on prefix on-click="method in the component </p>
-    <button (click)="onClick()">Click 1</button> 
-    <button on-click="onClick()">Click 2</button>          
-               
-               
-    <div (click) = "onDivClick()">
-      <button type="button" class="btn btn-primary" (click) = "onClick($event)">Submit</button>
-      <button on-click = "onClick()">Submit</button>
+    <p>we can pass the DOM event to the handler by using the $event. <p>
+    <p> Syntax 1 : Use the braket (click)="event handler in the component"</p>
+    <p> Syntax 2 : on prefix on-click="event handler in the component </p>
+    <p> Use the console to see the message [F12]</p>
+    
+    <button (click)="onClick($event)">Click 1</button> 
+    <button on-click="onClick($event)">Click 2</button>          
+    <br>
+    <h4>The event also bubles up their parent. if they are also interested in the event </h4>  
+    <br>         
+    <div (click) = "onDivClick()" >
+      <button on-click = "onClick($event)">Buble up</button>
+    </div>
+    <br>
+    <p>You can stop the propagation by calling stopPropagation at any level</p>
+    
+    <div (click) = "onDivClick()" >
+      <button on-click = "onClickNoPropagation($event)">No Propagation</button>
     </div>
     `,
     // including 
@@ -28,7 +37,7 @@ import {Component} from 'angular2/core';
 export class EventBindingTutorialComponent {
   
   onDivClick(){
-      console.log ("Handle by Div");
+      console.log ("Handled by Div");
   }
   
   onClick($event){
@@ -36,6 +45,11 @@ export class EventBindingTutorialComponent {
      // $event.stopPropagation();
       console.log("Clicked",$event);
   }
-  
+
+  onClickNoPropagation($event){
+     // enable the line below will stop the event to be buble.
+      $event.stopPropagation();
+      console.log("Clicked and no propagation",$event);
+  }  
   
 }

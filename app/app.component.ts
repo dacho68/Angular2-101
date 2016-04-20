@@ -5,6 +5,7 @@ import {Component} from 'angular2/core';
 import {PropertyBindingTutorialComponent} from './propertyBindingTutorial.component';
 import {EventBindingTutorialComponent} from './eventBindingTutorial.component';
 import {ClassBindingTutorialComponent} from './classBindingTutorial.component';
+import {TwoWayBindingTutorialComponent} from './twoWayBindingTutorial.component';
 
 // this is new to Angular 2.0
 @Component({
@@ -16,9 +17,10 @@ import {ClassBindingTutorialComponent} from './classBindingTutorial.component';
               <propertyBindingTutorial></propertyBindingTutorial><br>
               <classBindingTutorial></classBindingTutorial><br>
               <eventBindingTutorial></eventBindingTutorial><br>
+              <twoWayBindingTutorial></twoWayBindingTutorial>
               `,
     // including those 2 components
-   directives:[ PropertyBindingTutorialComponent,ClassBindingTutorialComponent ,EventBindingTutorialComponent]
+   directives:[ PropertyBindingTutorialComponent,ClassBindingTutorialComponent ,EventBindingTutorialComponent,TwoWayBindingTutorialComponent]
 })
 
 export class AppComponent {
