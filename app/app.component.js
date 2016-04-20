@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/common'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, common_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (common_1_1) {
+                common_1 = common_1_1;
             }],
         execute: function() {
             // this is new to Angular 2.0
@@ -35,9 +38,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         // element selector my-app
                         selector: 'my-app',
                         // the event bubling form the button to the div  
-                        template: "\n    <div (click) = \"onDivClick()\">\n\n      <button (click) = \"onClick($event)\">Submit</button>\n      <button on-click = \"onClick()\">Submit</button>\n    </div>\n    ",
+                        template: "\n    <div (click) = \"onDivClick()\">\n      <button type=\"button\" class=\"btn btn-primary\" (click) = \"onClick($event)\">Submit</button>\n      <button on-click = \"onClick()\">Submit</button>\n    </div>\n    ",
                         // including those 2 components
-                        directives: []
+                        directives: [common_1.CORE_DIRECTIVES, common_1.FORM_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
