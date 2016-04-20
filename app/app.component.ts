@@ -17,7 +17,7 @@ import {TwoWayBindingTutorialComponent} from './twoWayBindingTutorial.component'
               <propertyBindingTutorial></propertyBindingTutorial><br>
               <classBindingTutorial></classBindingTutorial><br>
               <eventBindingTutorial></eventBindingTutorial><br>
-              <twoWayBindingTutorial></twoWayBindingTutorial>
+              <twoWayBindingTutorial></twoWayBindingTutorial><br>
               `,
     // including those 2 components
    directives:[ PropertyBindingTutorialComponent,ClassBindingTutorialComponent ,EventBindingTutorialComponent,TwoWayBindingTutorialComponent]
