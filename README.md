@@ -10,11 +10,11 @@ npm install -g typescript
 npm install -g typings
 ```
 
-WE are going VSCode as our IDE, and you can download it from  code.visualstudio.com. 
+We are going VSCode as our IDE, and you can download it from  code.visualstudio.com. 
 
 after you checkout this repository. Run the command below for install the dependencies
 
 ```
 npm install
-npm install --save ng2-bootstrap 
+npm start
 ```
