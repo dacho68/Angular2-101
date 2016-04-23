@@ -1,13 +1,13 @@
-// core fo angular2. always need it
+// core of angular2. always need it
 import {Component} from 'angular2/core';
-import {CORE_DIRECTIVES} from 'angular2/common';
-//import {TAB_DIRECTIVES} from 'ng2-bootstrap/ng2-bootstrap';
+
 
 // import the components
 import {PropertyBindingTutorialComponent} from './propertyBindingTutorial.component';
 import {EventBindingTutorialComponent} from './eventBindingTutorial.component';
 import {ClassBindingTutorialComponent} from './classBindingTutorial.component';
 import {TwoWayBindingTutorialComponent} from './twoWayBindingTutorial.component';
+import {FavoriteComponent} from './favorite.component';
 
 // this is new to Angular 2.0
 @Component({
@@ -20,12 +20,14 @@ import {TwoWayBindingTutorialComponent} from './twoWayBindingTutorial.component'
               <classBindingTutorial></classBindingTutorial><br>
               <eventBindingTutorial></eventBindingTutorial><br>          
               <twoWayBindingTutorial></twoWayBindingTutorial><br>
+              <favorite></favorite>
               `,
     // including those 2 components
    directives:[ PropertyBindingTutorialComponent,
                 ClassBindingTutorialComponent ,
                 EventBindingTutorialComponent,
-                TwoWayBindingTutorialComponent ]
+                TwoWayBindingTutorialComponent,
+                FavoriteComponent ]
 })
 
 export class AppComponent {

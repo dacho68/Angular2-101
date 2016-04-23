@@ -10,7 +10,7 @@ I develop  the Angular 2 samples along way I'm learning Angular 2.
 
 ## Setup the environment on Windows for running the samples
 - First install the Node at nodejs.org
-- Install typescript 
+- Install typescript globally
 
 ```
 npm install -g typescript
@@ -92,6 +92,7 @@ See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master
    **Syntax :**
    
         <input [(ngModel)]="event handler in the component">
+        <input bindon-ngModel="currentHero.firstName">
    
 See: [Two way Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/twoWayBindingTutorial.component.ts)
    
@@ -102,4 +103,16 @@ See: [Two way Binding Example](https://github.com/dacho68/Angular2-101/blob/mast
 ```   
 
 
-    
+## Exercise - Make a favorite start toggle between full and empty    
+
+use the glyphicon from bootstrap to render the icon
+
+See: [Solution](https://github.com/dacho68/Angular2-101/blob/master/app/favorite.component.ts)
+
+``` html5   
+    <i class = "glyphicon glyphicon-star" />
+    <i class = "glyphicon glyphicon-star-empty" />
+```    
+
+
+ 
