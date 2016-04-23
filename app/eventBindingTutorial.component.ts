@@ -9,14 +9,8 @@ import {Component} from 'angular2/core';
     // the event bubling form the button to the div  
     template: `
     <h3>Event Binding</h3>
-    <h4>There are 2 ways to do event binding.</h4>
-    <p>we can pass the DOM event to the handler by using the $event. <p>
-    <p> Syntax 1 : Use the braket (click)="event handler in the component"</p>
-    <p> Syntax 2 : on prefix on-click="event handler in the component </p>
-    <p> Use the console to see the message [F12]</p>
-    
-    <button (click)="onClick($event)">Click 1</button> 
-    <button on-click="onClick($event)">Click 2</button>          
+    <button (click)="onClick($event)">Click syntax 1</button> 
+    <button on-click="onClick($event)">Click syntax 2</button>          
     <br>
     <h4>The event also bubles up their parent. if they are also interested in the event </h4>  
     <br>         

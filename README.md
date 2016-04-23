@@ -5,7 +5,7 @@ I develop  the Angular 2 samples along way I'm learning Angular 2.
 
 ## Setup the environment on Windows for running the samples
 - First install the Node at nodejs.org
-- Install typescript
+- Install typescript 
 
 ```
 npm install -g typescript
@@ -22,13 +22,14 @@ npm start
 
 ## Property Binding
 
-    One way binding from the Component to DOM. There are 3 ways to bind a property, see the img binding below  
-    **Syntax:** 
-           1 : DOM attribute in the square braket [_attribute_]="component property"</p>
-           2 : Prefix with the DOM attribute with bind-  "bind-_attribue_ = "component property" </p>
-           3 : Interpolation {{ component property }} 
+   One way binding from the Component to DOM. There are 3 ways to bind a property, see the img binding below.  
+   
+   **Syntax :**
+        1.  DOM attribute in the square bracket      -> [attribute]="component property"
+        2.  Prefix with the DOM attribute with bind- -> bind-attribue = "component property"
+        3.  Interpolation                            -> {{ component property }} 
  
-Example :  See https://github.com/dacho68/Angular2-101/blob/master/app/propertyBindingTutorial.component.ts  
+See: [Property Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/propertyBindingTutorial.component.ts)  
 ``` html5
     <h5>{{ title }}</h5>
     <img src="{{imageUrl}}" />
@@ -37,13 +38,60 @@ Example :  See https://github.com/dacho68/Angular2-101/blob/master/app/propertyB
 ```
 
 ## Class and Style Binding
-
-    Syntax : [class.attribute] = "component property"
+  **Syntax :** 
+   
+        [class.class-name] = "component property"
+        [style.style-property] = "component property"    
     
-    
-Example :  See https://github.com/dacho68/Angular2-101/blob/master/app/classBindingTutorial.component.ts     
+See: [Class and Style Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/classBindingTutorial.component.ts)     
 
 ``` html5
     <button class="btn btn-primary" [class.active]="isActive">active</button>
+    <button class="btn btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'gray'">active</button>
 ```
 
+## Event Binding
+
+   There are 2 ways to do the event binding as shown below. We can pass the DOM event to the handler method in the component by using the $event.
+   If the parent container has also the interest in the event, then event will bubble up to their parent. However, you can stop the 
+   bubbling by calling  $event.stopPropagation().
+    
+   **Syntax :** 
+  
+        1. (event)="event handler in the component"
+        2. on-event="event handler in the component"
+    
+
+See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/eventBindingTutorial.component.ts)
+
+``` html5
+    <button (click)="onClick($event)">Click syntax 1</button> 
+    <button on-click="onClick($event)">Click syntax 2</button>          
+    <br>
+    <h4>The event also bubles up their parent. if they are also interested in the event </h4>  
+    <br>         
+    <div (click) = "onDivClick()" >
+      <button on-click = "onClick($event)">Buble up</button>
+    </div>
+    <br>
+
+```
+
+## Two way Data Binding
+
+   When developing data entry forms, we often want to both display a data property and update that property when the user makes changes.
+   
+   **Syntax :**
+   
+        <input [(ngModel)]="event handler in the component">
+   
+See: [Two way Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/twoWayBindingTutorial.component.ts)
+   
+``` html5   
+    <input type="text" [(ngModel)]= "title" />
+    <input type="button" (click)="title = ''" value="Clear" />
+    Preview {{ title }}
+```   
+
+
+    

@@ -7,7 +7,7 @@ import {Component} from 'angular2/core'
                <button class="btn btn-primary">normal</button> <button class="btn btn-primary" [class.active]="isActive">active</button>
                <br>
                <h3>Style Binding</h3>
-               [style.backgroundColor]="isActive ? 'blue' : 'gray'
+               [style.backgroundColor]="isActive ? 'blue' : 'gray'"
                 <button class="btn btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'gray'">active</button>
               ` ,
     providers: []
