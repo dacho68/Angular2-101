@@ -20,6 +20,7 @@ npm start
 ```
 
 ## Property Binding
+See https://github.com/dacho68/Angular2-101/blob/master/app/propertyBindingTutorial.component.ts
 ``` html5
     <h5>{{ tilte }}</h5>
     <img src="{{imageUrl}}" />
