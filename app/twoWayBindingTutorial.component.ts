@@ -9,8 +9,7 @@ import {Component} from 'angular2/core'
                <input type="button" (click)="title = ''" value="Clear" />
                Preview {{ title }}
                <p>However, you can archive the same result with ngModel</p>
-               
-               <input type="text" [(ng-model)]= "title" />
+               <input type="text" [(ngModel)]= "title" />
                <input type="button" (click)="title = ''" value="Clear" />
                Preview {{ title }}
                
