@@ -12,9 +12,7 @@ import {FavoriteComponent} from './favorite.component';
 // this is new to Angular 2.0
 @Component({
     // element selector my-app
-    selector: 'my-app',
-
-    // the event bubling form the button to the div  
+    selector: 'my-app', 
     template: `<h1>Welcome to Angular 2 - 101</h1>
               <propertyBindingTutorial></propertyBindingTutorial><br>
               <classBindingTutorial></classBindingTutorial><br>
@@ -22,7 +20,7 @@ import {FavoriteComponent} from './favorite.component';
               <twoWayBindingTutorial></twoWayBindingTutorial><br>
               <favorite></favorite>
               `,
-    // including those 2 components
+    // including those  components
    directives:[ PropertyBindingTutorialComponent,
                 ClassBindingTutorialComponent ,
                 EventBindingTutorialComponent,
