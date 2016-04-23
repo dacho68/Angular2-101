@@ -1,12 +1,12 @@
 # Angular2-101
 
-This is the staring point for the CSharp developers who want to throw into Angular2.  Most of the samples are from the course Angular 2 with TypeScript by Mosh Hamedi.
+This is the staring point for the CSharp developers who want to throw into Angular2.  Most of the samples are from the course Angular 2 with TypeScript by Mosh Hamedi on Udemy.
 I develop  the Angular 2 samples along way I'm learning Angular 2.
 
-- [Jumpstart](https://github.com/dacho68/Angular2-Jumpstart)  (Quick understanding of how to build an App with Angular 2)
-- Part 1 (Property Binding, Class and Style Binding, Event Binding, Two way Binding)
-- Part 2
-- Part 3
+- [Jumpstart](https://github.com/dacho68/Angular2-Jumpstart) - Quick understanding of how to build an App with Angular 2.
+- 101 - Property Binding, Class and Style Binding, Event Binding, Two way Binding.
+- [102](https://github.com/dacho68/Angular2-102) - Component API in depth.
+- 103
 
 ## Setup the environment on Windows for running the samples
 - First install the Node at nodejs.org
