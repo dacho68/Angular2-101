@@ -20,8 +20,15 @@ npm start
 ```
 
 ## Property Binding
+
 See https://github.com/dacho68/Angular2-101/blob/master/app/propertyBindingTutorial.component.ts
 ``` html5
+    One way binding from the Component to DOM. There are 3 ways to bind a property, see the img binding below.</p>
+  
+    Syntax 1 : DOM property in the square braket [attribute]="property"</p>
+    Syntax 2 : Prefix with the "bind&-" </p>
+    Syntax 3 : Interpolation {{ property }} 
+
     <h5>{{ tilte }}</h5>
     <img src="{{imageUrl}}" />
     <img [src]="imageUrl" />
