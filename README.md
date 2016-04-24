@@ -9,7 +9,7 @@ I'm developping  the Angular 2 samples along way I'm learning Angular 2. If you 
 - 103
 
 ## Setup the environment on Windows for running the samples
-- First instal [NodeJs](https://nodejs.org/en/)
+- First install [NodeJs](https://nodejs.org/en/)
 - Install typescript globally
 
 ```
@@ -29,12 +29,12 @@ npm start
 
 ## Property Binding
 
-   One way binding from the Component to DOM. There are 3 ways to bind a property, see the img binding below.  
-   
-   **Syntax :**
-        1.  DOM attribute in the square bracket      -> [attribute]="component property"
-        2.  Prefix with the DOM attribute with bind- -> bind-attribue = "component property"
-        3.  Interpolation                            -> {{ component property }}  
+One way binding from the Component to DOM. There are 3 ways to bind a property, see the img binding below.  
+
+**Syntax :**
+    1.  DOM attribute in the square bracket      -> [attribute]="component property"
+    2.  Prefix with the DOM attribute with bind- -> bind-attribue = "component property"
+    3.  Interpolation                            -> {{ component property }}  
 
 **Example :**
 ``` html5
@@ -61,12 +61,11 @@ See: [Class and Style Binding Example](https://github.com/dacho68/Angular2-101/b
 
 ## Event Binding
 
-   There are 2 ways to do the event binding as shown below. We can pass the DOM event to the handler method in the component by using the $event.
-   If the parent container has also the interest in the event, then event will bubble up to their parent. However, you can stop the 
-   bubbling by calling  $event.stopPropagation().
-    
-   **Syntax :** 
-  
+There are 2 ways to do the event binding as shown below. We can pass the DOM event to the handler method in the component by using the $event.
+If the parent container has also the interest in the event, then event will bubble up to their parent. However, you can stop the 
+bubbling by calling  $event.stopPropagation().
+
+**Syntax :** 
         1. (event)="event handler in the component"
         2. on-event="event handler in the component"
 
@@ -87,9 +86,9 @@ See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master
 
 ## Two way Data Binding
 
-   When developing data entry forms, we often want to both display a data property and update that property when the user makes changes.
+When developing data entry forms, we often want to both display a data property and update that property when the user makes changes.
    
-   **Syntax :**
+**Syntax :**
    
         <input [(ngModel)]="event handler in the component">
         <input bindon-ngModel="currentHero.firstName">
@@ -104,9 +103,9 @@ See: [Two way Binding Example](https://github.com/dacho68/Angular2-101/blob/mast
 
 ## Exercise - Make a favorite start toggle between full and empty    
 
-use the glyphicon from bootstrap to render the icon
+Use the glyphicon from bootstrap to render the icon.
 
-__Hints :__
+_Hints :_
 ``` html5   
     <i class = "glyphicon glyphicon-star" />
     <i class = "glyphicon glyphicon-star-empty" />
