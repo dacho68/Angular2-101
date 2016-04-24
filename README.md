@@ -1,7 +1,7 @@
 # Angular2-101
 
 This is the starting point for developers with some basic knowledge of HTML, CSS, Javascript who want to throw into Angular2 JS.  Most of the samples are from the course [Angular 2 with TypeScript](https://www.udemy.com/angular-2-tutorial-for-beginners/learn/v4/overview) by Mosh Hamedi on Udemy.
-I develop  the Angular 2 samples along way I'm learning Angular 2. If you have time, I recommend you to take the course because it has richer contents.
+I'm developping  the Angular 2 samples along way I'm learning Angular 2. If you have time, I recommend you to take the course because it has richer contents.
 
 - [Jumpstart](https://github.com/dacho68/Angular2-Jumpstart) - Quick understanding of how to build an App with Angular 2.
 - 101 - Property Binding, Class and Style Binding, Event Binding, Two way Binding.
@@ -34,28 +34,30 @@ npm start
    **Syntax :**
         1.  DOM attribute in the square bracket      -> [attribute]="component property"
         2.  Prefix with the DOM attribute with bind- -> bind-attribue = "component property"
-        3.  Interpolation                            -> {{ component property }} 
- 
-See: [Property Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/propertyBindingTutorial.component.ts)  
+        3.  Interpolation                            -> {{ component property }}  
+
+**Example :**
 ``` html5
     <h5>{{ title }}</h5>
     <img src="{{imageUrl}}" />
     <img [src]="imageUrl" />
     <img bind-src="imageUrl" />
 ```
+See: [Property Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/propertyBindingTutorial.component.ts)  
 
 ## Class and Style Binding
   **Syntax :** 
    
         [class.class-name] = "component property"
         [style.style-property] = "component property"    
-    
-See: [Class and Style Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/classBindingTutorial.component.ts)     
-
+      
+**Example :**
 ``` html5
     <button class="btn btn-primary" [class.active]="isActive">active</button>
     <button class="btn btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'gray'">active</button>
 ```
+
+See: [Class and Style Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/classBindingTutorial.component.ts)   
 
 ## Event Binding
 
@@ -67,10 +69,8 @@ See: [Class and Style Binding Example](https://github.com/dacho68/Angular2-101/b
   
         1. (event)="event handler in the component"
         2. on-event="event handler in the component"
-    
 
-See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/eventBindingTutorial.component.ts)
-
+**Example :**
 ``` html5
     <button (click)="onClick($event)">Click syntax 1</button> 
     <button on-click="onClick($event)">Click syntax 2</button>          
@@ -81,8 +81,9 @@ See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master
       <button on-click = "onClick($event)">Buble up</button>
     </div>
     <br>
-
 ```
+See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/eventBindingTutorial.component.ts)
+
 
 ## Two way Data Binding
 
@@ -92,26 +93,24 @@ See: [Event Binding Example](https://github.com/dacho68/Angular2-101/blob/master
    
         <input [(ngModel)]="event handler in the component">
         <input bindon-ngModel="currentHero.firstName">
-   
-See: [Two way Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/twoWayBindingTutorial.component.ts)
-   
+
+**Example :**   
 ``` html5   
     <input type="text" [(ngModel)]= "title" />
     <input type="button" (click)="title = ''" value="Clear" />
     Preview {{ title }}
 ```   
-
+See: [Two way Binding Example](https://github.com/dacho68/Angular2-101/blob/master/app/twoWayBindingTutorial.component.ts)
 
 ## Exercise - Make a favorite start toggle between full and empty    
 
 use the glyphicon from bootstrap to render the icon
 
-See: [Solution](https://github.com/dacho68/Angular2-101/blob/master/app/favorite.component.ts)
-
+__Hints :__
 ``` html5   
     <i class = "glyphicon glyphicon-star" />
     <i class = "glyphicon glyphicon-star-empty" />
 ```    
-
+See: [Solution](https://github.com/dacho68/Angular2-101/blob/master/app/favorite.component.ts)
 
  
