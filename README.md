@@ -25,6 +25,8 @@ npm install
 npm start
 ```
 
+**Note :** In Angular, use single back quote (`) for multiple line editing.
+
 ## Property Binding
 
    One way binding from the Component to DOM. There are 3 ways to bind a property, see the img binding below.  
