@@ -1,6 +1,6 @@
 # Angular2-101
 
-This is the staring point for the CSharp developers who want to throw into Angular2.  Most of the samples are from the course [Angular 2 with TypeScript](https://www.udemy.com/angular-2-tutorial-for-beginners/learn/v4/overview) by Mosh Hamedi on Udemy.
+This is the starting point for developers with some basic knowledge of HTML, CSS, Javascript who want to throw into Angular2 JS.  Most of the samples are from the course [Angular 2 with TypeScript](https://www.udemy.com/angular-2-tutorial-for-beginners/learn/v4/overview) by Mosh Hamedi on Udemy.
 I develop  the Angular 2 samples along way I'm learning Angular 2. If you have time, I recommend you to take the course because it has richer contents.
 
 - [Jumpstart](https://github.com/dacho68/Angular2-Jumpstart) - Quick understanding of how to build an App with Angular 2.
