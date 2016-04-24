@@ -1,6 +1,6 @@
 # Angular2-101
 
-This is the staring point for the CSharp developers who want to throw into Angular2.  Most of the samples are from the course Angular 2 with TypeScript by Mosh Hamedi on Udemy.
+This is the staring point for the CSharp developers who want to throw into Angular2.  Most of the samples are from the course [Angular 2 with TypeScript](https://www.udemy.com/angular-2-tutorial-for-beginners/learn/v4/overview) by Mosh Hamedi on Udemy.
 I develop  the Angular 2 samples along way I'm learning Angular 2. If you have time, I recommend you to take the course because it has richer contents.
 
 - [Jumpstart](https://github.com/dacho68/Angular2-Jumpstart) - Quick understanding of how to build an App with Angular 2.
@@ -9,7 +9,7 @@ I develop  the Angular 2 samples along way I'm learning Angular 2. If you have t
 - 103
 
 ## Setup the environment on Windows for running the samples
-- First install the Node at nodejs.org
+- First instal [NodeJs](https://nodejs.org/en/)
 - Install typescript globally
 
 ```
@@ -17,7 +17,7 @@ npm install -g typescript
 npm install -g typings
 ```
 
-We are going VSCode as our IDE, and you can download it from  code.visualstudio.com. 
+We are going to use [Visual Studio Code](http://code.visualstudio.com/) for editing our project
 after you checkout this repository. Run the command below for install the dependencies
 
 ```
