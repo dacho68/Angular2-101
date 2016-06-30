@@ -1,5 +1,5 @@
 // core fo angular2 . always need it
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 // this is new to Angular 2.0
 @Component({

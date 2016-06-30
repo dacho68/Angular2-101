@@ -113,4 +113,6 @@ _Hints :_
 ```    
 See: [Solution](https://github.com/dacho68/Angular2-101/blob/master/app/favorite.component.ts)
 
- 
+## Output
+
+![Result](./images/result.jpg)
