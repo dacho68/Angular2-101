@@ -3,29 +3,18 @@ import {Component} from '@angular/core';
 
 
 // import the components
-import {PropertyBindingTutorialComponent} from './propertyBindingTutorial.component';
-import {EventBindingTutorialComponent} from './eventBindingTutorial.component';
-import {ClassBindingTutorialComponent} from './classBindingTutorial.component';
-import {TwoWayBindingTutorialComponent} from './twoWayBindingTutorial.component';
-import {FavoriteComponent} from './favorite.component';
-
+import {Bubbles} from './bubbles.component';
+import {Bars} from './bars.component';
 // this is new to Angular 2.0
 @Component({
     // element selector my-app
     selector: 'my-app', 
-    template: `<h1>Welcome to Angular 2 - 101</h1>
-              <propertyBindingTutorial></propertyBindingTutorial><br>
-              <classBindingTutorial></classBindingTutorial><br>
-              <eventBindingTutorial></eventBindingTutorial><br>          
-              <twoWayBindingTutorial></twoWayBindingTutorial><br>
-              <favorite></favorite>
+    template: `<h1>Welcome to Angular 2 - d3JS</h1>
+              <bars [values]="[23, 34, 12, 33, 25, 2,6]"></bars>
+              <bubbles [values]="[1000, 25000, 3000000, 120000, 25, 10203]"></bubbles>
               `,
     // including those  components
-   directives:[ PropertyBindingTutorialComponent,
-                ClassBindingTutorialComponent ,
-                EventBindingTutorialComponent,
-                TwoWayBindingTutorialComponent,
-                FavoriteComponent ]
+   directives:[ Bubbles,Bars ]
 })
 
 export class AppComponent {
