@@ -7,7 +7,7 @@ import {BubblesChart} from './bubbles.chart';
 // with `bubbles` elements in the DOM, and will include the specified markup as its template
 @Component({
     selector: 'bubbles',
-    template: '<svg #target width="600" height="300"></svg>'
+    template: '<svg #target width="900" height="600"></svg>'
 })
 export class Bubbles implements OnChanges, AfterViewInit {
   // Declares values as a data-bound property
