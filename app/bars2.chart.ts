@@ -13,11 +13,11 @@ export class Bars2Chart {
         var width = 420,
         barHeight = 20;
   
-  
+     
         var x = d3.scale.linear()
         .domain([0, d3.max(data)])
         .range([0, width]);
-    
+ 
         var chart = d3.select(this.target)
         .attr("width", width)
         .attr("height", barHeight * data.length);
