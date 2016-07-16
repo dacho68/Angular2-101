@@ -1,5 +1,4 @@
 /node_modules/*
-/d3_v3/*
 /typings
 /app/*.js
 /app/*.map
