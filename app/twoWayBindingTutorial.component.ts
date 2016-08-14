@@ -1,16 +1,15 @@
-import {Component} from '@angular/core'
-
+import {Component } from '@angular/core'
+import { NgModule } from '@angular/core';
 @Component({
     selector: 'twoWayBindingTutorial',
     template: `<h3>Two Way Binding</h3>
-              
                <p> Manual way, where you define the binding and the event<p>
                <input type="text" [value]= "title" (input)="title=$event.target.value" />
                <input type="button" (click)="title = ''" value="Clear" />
                Preview {{ title }}
                <p>However, you can archive the same result with ngModel</p>
-               <input type="text" [(ngModel)]= "title" />
-               <input type="button" (click)="title = ''" value="Clear" />
+               <input type="text" [(ngModel)] = "title" >
+               <input type="button" (click)="title = ''" value="Clear" >
                Preview {{ title }}
                
               ` ,
