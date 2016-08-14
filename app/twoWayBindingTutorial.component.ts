@@ -1,5 +1,5 @@
 import {Component } from '@angular/core'
-import { NgModule } from '@angular/core';
+
 @Component({
     selector: 'twoWayBindingTutorial',
     template: `<h3>Two Way Binding</h3>
